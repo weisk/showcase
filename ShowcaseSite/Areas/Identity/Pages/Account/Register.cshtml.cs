@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using Microsoft.VisualBasic;
 
 namespace ShowcaseSite.Areas.Identity.Pages.Account
 {
@@ -62,6 +63,19 @@ namespace ShowcaseSite.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+            
+            [Required]
+            [Display(Name = "First name")]
+            public string firstName { get; set; }
+
+            [Required]
+            [Display(Name = "Last name")]
+            public string lastName { get; set; }
+            
+            [Required]
+            [Display(Name = "Date of birth")]
+            [DataType(DataType.Date)]
+            public DateAndTime birthdate { get; set; }
         }
 
         public void OnGet(string returnUrl = null)
