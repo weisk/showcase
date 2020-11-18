@@ -75,7 +75,7 @@ namespace ShowcaseSite.Areas.Identity.Pages.Account
             [Required]
             [Display(Name = "Date of birth")]
             [DataType(DataType.Date)]
-            public DateAndTime birthdate { get; set; }
+            public DateTime birthdate { get; set; }
         }
 
         public void OnGet(string returnUrl = null)
