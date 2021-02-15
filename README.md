@@ -2,6 +2,8 @@
 # ShowCase
 Website project - site will allow user to log in and have an account where they can showcase and/or sell any type of work. Intended for art mostly - like 'Etsy' or 'Tumblr', opposed to items such as sites like 'OfferUp'
 
+lalala
+
 ## Coding guidelines
 See [Guidelines](CodingGuideLines.Md)
 
